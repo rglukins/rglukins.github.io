@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equator Weather Project</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Equatorial Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Plots</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="temp_v_lat.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity_v_lat.html">Humidity</a>
+                    <a class="dropdown-item" href="cloud_v_lat.html">Cloudiness</a>
+                    <a class="dropdown-item" href="ws_v_lat.html">Wind Speed</a>
+                  </div>
+                </div>
+            </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        
+      </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="row text-center">
+           <div class="col-xs-3 col-sm-6 col-md-12">
+              <h1>Data Explorer's Journal: Weather Near the Equator</h1>
+            </div>
+    </div>
+    <dir class="container">
+        <div class="jumbotron">
+            <h1 class="display-3 wavey">Mission:</h1>
+            <p class="lead">People generally think that the weather changes dramatically the closer we get to the equator, but does this belief stand up to scrutiny?!? The Data Science team needs needs hard facts.</p>
+            <br>
+            <p class="lead">--Our task in this project was to analyze weather patterns by city as they get closer to the equator, trying to provide practical data to support the common claim that weather patterns change predictably closer to the equator.</p>
+            <hr class="my-4">
+            <p><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              I used various python api's to query data by geographic location and record weather variables such as humidity, temperature, etc. Then I used pandas to analyze the data and seaborn/matplotlib to graph the results. Click below for more details!</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="data.html" role="button">Jump to the Data</a>
+              <a class="btn btn-primary btn-lg" href="comparisons.html" role="button">Jump to the Comparisons</a>
+            </p>
+          </div>
+    </dir>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 col-sm-6 col-md-12">
+          <h1>
+            Visualizations  
+          </h1>
+          <p class="small-font">
+              Here's a quick sketch of the plots from the project. Click on any one to jump to the analysis...
+            </p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-3 col-sm-6 col-md-12">
+              <a href="cloud_v_lat.html"> 
+                  <img src="cloud_v_lat.png" alt="Cloudiness" width="250">
+                </a>
+                <a href="temp_v_lat.html"> 
+                  <img src="temp_v_lat.png" alt="temp" width="250">
+                </a>
+                <a href="humidity_v_lat.html"> 
+                  <img src="humidity_v_lat.png" alt="humidity" width="250">
+                </a>
+                <a href="ws_v_lat.html"> 
+                    <img src="ws_v_lat.png" alt="wind speed" width="250">
+                  </a>
+          </div>
+      </div>
+
+
+    </div>
+    
+    
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+</html>

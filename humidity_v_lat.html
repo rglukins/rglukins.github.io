@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equator Weather Project: Humidity</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Equatorial Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Plots</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="temp_v_lat.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity_v_lat.html">Humidity</a>
+                    <a class="dropdown-item" href="cloud_v_lat.html">Cloudiness</a>
+                    <a class="dropdown-item" href="ws_v_lat.html">Wind Speed</a>
+                  </div>
+                </div>
+            </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        
+      </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+    <div class="row text-center">
+        <div class="col-xs-3 col-sm-6 col-md-12">
+            <h1 class="wavey">Humidity Near the Equator</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <!--First Column in this Row-->
+        <div class="col-md-6">
+            <div class="box">
+                <img src="humidity_v_lat.png" alt="Humidity" width="550">
+            </div>
+        </div>
+        <!--Second Column in this Row-->
+        <div class="col-md-6">
+            <div class="box">
+              <h1>Findings--</h1>
+              <p class="findings">--Many cities near the equator do have high humidity, but there isn't strong statistical evidence to suggest a causal relationship. In fact, some cities on the equator have relativley low humidity.</p>
+              <p class="findings">--& some cities far from the equator have fairly high humidity.</p>
+              <p class="findings">--There seem to be relatively few cities on the equator itself--which is understandable--& there seems to be relatively fewer between 10 and -10 latitude...</p>
+              <p class="findings"><span><button type="button" class="btn btn-outline-warning">Keep in mind...</button>Most cities are located farther from the equator,</span>
+              <span class="wavey">where other geographic factors infuence humidity.</span>
+            </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+</html>

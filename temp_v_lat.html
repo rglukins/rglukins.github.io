@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equator Weather Project: Wind Speed</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Equatorial Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Plots</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="temp_v_lat.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity_v_lat.html">Humidity</a>
+                    <a class="dropdown-item" href="cloud_v_lat.html">Cloudiness</a>
+                    <a class="dropdown-item" href="ws_v_lat.html">Wind Speed</a>
+                  </div>
+                </div>
+            </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        
+      </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+    <div class="row text-center">
+        <div class="col-xs-3 col-sm-6 col-md-12">
+            <h1>Temperature Near the Equator</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <!--First Column in this Row-->
+        <div class="col-md-6">
+          <div class="box">
+                <img src="temp_v_lat.png" alt="Temperature" width="500">
+           </div>  
+        </div>
+        <div class="col-md-6">
+            <div class="box">
+                  <h1>Findings--
+                      <img src="https://openclipart.org/image/90px/svg_to_png/240547/Orange-Sun-01.png" alt="orange sun">
+                  </h1>
+                  <p class="findings">--Of the 4 factors I considered, temperature has the strongest causal relationship to latitude.</p>
+                  <p class="findings">--On the date of analysis, the highest temperatures were recorded at 20 degrees latitude, which is due to the Earth's rotational position at that time of year. Summer in the Northern Hemisphere.</p>
+                  <p class="findings">--We can say with confidence that the data supports the generally assumed correlation between latitute and temperature.</p>
+                  <p class="findings wavey"><span class="badge badge-pill badge-success">Success</span>Latitude does effect temperature!</p>
+            </div>
+        </div>
+        </div>
+       
+    
+   
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+</html>

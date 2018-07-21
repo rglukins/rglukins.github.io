@@ -1,0 +1,31 @@
+.wavey{
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    color: gray
+    }
+
+.findings {
+    font-size: 12
+}
+
+.strikeout{
+    text-decoration: line-through;
+}
+
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.small-font{
+    font-size: 10
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.background{
+    color: lightgray
+}

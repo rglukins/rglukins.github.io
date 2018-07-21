@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equator Weather Project: Cloudiness</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Equatorial Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-primary">Plots</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <a class="dropdown-item" href="temp_v_lat.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity_v_lat.html">Humidity</a>
+                    <a class="dropdown-item" href="cloud_v_lat.html">Cloudiness</a>
+                    <a class="dropdown-item" href="ws_v_lat.html">Wind Speed</a>
+                  </div>
+                </div>
+            </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        
+      </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+    <div class="row text-center">
+        <div class="col-xs-3 col-sm-6 col-md-12">
+            <h1>Clouds!</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+            <!--First Column in this Row-->
+        <div class="col-md-6">
+            <div class="box">
+                <img src="cloud_v_lat.png" alt="Cloudiness" width="500">
+            </div>
+        </div>
+        <!--Second Column in this Row-->
+        <div class="col-md-6">
+                <div class="box">
+                  <h1>Findings--</h1>
+                  <img src="https://openclipart.org/image/90px/svg_to_png/14706/Anonymous-simple-weather-symbols-5.png" alt="", width="100">
+                  <p class="findings">--Note the shallow curve that suggests a very weak correlation between cloudiness and latitutde.</p>
+                  <p class="findings">--The curve is at its lowest near the equator, but given the number of observations scattered across the grid
+                      <span class="strikeout">--it might be worth exploring</span>
+                      <span class="sup">--let's not--changed my mind...</span>
+                      <button type="button" class="btn btn-outline-danger">No!</button></p>
+                  <p class="findings">--However, most of the decreases and increases in the curve happen at latitudes greater than 30 degrees (north and south)-->.</p>
+                  <p>not really worth further investigation...</p>
+                  <p class="findings wavey">*The data on Cloudiness is largely inconclusive.</p>
+                  <img src="https://openclipart.org/image/2400px/svg_to_png/30079/weather-few-clouds-night.png" alt="cloud sketch", width="100">
+                  <img src="https://openclipart.org/image/90px/svg_to_png/260246/1472553499.png" alt="", width="150">
+                </div>
+        </div>
+    </div>
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+</body>
+</html>
